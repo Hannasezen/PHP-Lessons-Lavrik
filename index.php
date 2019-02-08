@@ -13,13 +13,13 @@
 	} else {
 		$img = "evening.jpg";
 	}
-
-	if($h === 0 || $h === 20) {
-		$hours = "";
+	
+	if($h > 3 && $h < 20) {
+		$hours = "ов";
 	} else if($h >0 && $h < 4 || $h > 20 && $h < 24) {
 		$hours = "а";
-	} else if($h > 3 && $h < 20) {
-		$hours = "ов";
+	} else if($h === 0 || $h === 20) {
+		$hours = "";
 	}
 ?>
 <!DOCTYPE html>
