@@ -4,11 +4,11 @@
 	$img = floor($h / 6);*/
 	$h = date("H");
 	
-	if($h >=0 && $h < 6) {
+	if($h < 6) {
 		$img = "night.jpg";
-	} else if ($h > 5 && $h < 12) {
+	} else if ($h < 12) {
 		$img = "morning.jpg";
-	} else if ($h > 11 && $h < 18) {
+	} else if ($h < 18) {
 		$img = "day.jpg";
 	} else {
 		$img = "evening.jpg";
